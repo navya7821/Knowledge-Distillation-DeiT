@@ -12,7 +12,6 @@ This project demonstrates knowledge distillation for a binary image classificati
 - **Scheduler**: CosineAnnealingLR (T_max=50).
 - **Loss Function**: CrossEntropyLoss (for teacher); distillation-specific logic in student training (hard labels visible in test).
 - **Image Processing**: Input size 224x224; augmentations include RandomResizedCrop, RandomHorizontalFlip, ColorJitter; normalization with ImageNet means/std.
-- **Dataset Paths**: Train/Val/Test directories under `/content/Dataset` and `/content/test_set`; labels from CSV files.
 - **Hardware**: GPU (CUDA-enabled); libraries include PyTorch, torchvision, timm, pandas, sklearn, matplotlib.
 - **Evaluation Metrics**: Accuracy, balanced accuracy, recall per class, macro F1, confusion matrix.
 
